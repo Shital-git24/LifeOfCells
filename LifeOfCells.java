@@ -1,16 +1,13 @@
 import java.util.Scanner;
 
 public class LifeOfCells {
-	// here we represent 0 as dead and 1 as alive 
-		// both are static and final so that it will remain same ans constant
-		public static final int dead=0;  
-		public static final int live =1;
-		//array
+	
+		//array of grid
 		int grid[][];
 		 int rows;
 		 int cols;
 		//using scanner class to take input from user
-			Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
 public void set(int [][] grid,int rows,int cols)
 {
@@ -47,7 +44,7 @@ public void get()
          }   
     }
   
-    public void check(int p,int q,int Cell)
+  public void check(int p,int q,int Cell)
     {
              int count=0,g1,g2,g3,g4;
               g1= p-1;
